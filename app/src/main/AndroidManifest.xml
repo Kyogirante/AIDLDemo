@@ -1,0 +1,45 @@
+<manifest package="com.demo.aidl"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/aidl_demo_app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/aidl_demo_app_name">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN"/>
+                    <category android:name="android.intent.category.LAUNCHER"/>
+                </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".local.BindLocalServiceActivity"
+            android:label="@string/aidl_demo_app_name"/>
+
+        <activity
+            android:name=".aidl.BindRemoteServiceActivity"
+            android:label="@string/aidl_demo_app_name"/>
+
+        <activity
+            android:name=".messenger.BindMessengerActivity"
+            android:label="@string/aidl_demo_app_name"/>
+
+        <service android:name=".local.LocalService"/>
+
+        <service
+            android:name=".aidl.RemoteService"
+            android:process=":remote"
+            android:exported="true"/>
+
+        <service
+            android:name=".messenger.MessengerService"
+            android:process=":remote"
+            android:exported="true"/>
+    </application>
+
+</manifest>

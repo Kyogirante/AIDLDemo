@@ -1,0 +1,18 @@
+<resources>
+    <string name="aidl_demo_app_name">AIDLDemo</string>
+
+    <string name="aidl_demo_show_service_name">show service\'s name</string>
+
+    <string name="aidl_demo_ibinder">IBinder</string>
+    <string name="aidl_demo_messenger">Messenger</string>
+    <string name="aidl_demo_aidl">AIDL</string>
+
+    <string name="remote_bind">Bind</string>
+    <string name="remote_unbind">unBind</string>
+    <string name="remote_get_info">Get Service Info</string>
+    <string name="remote_deliver_data">Deliver data</string>
+
+    <string name="messenger_send_msg">Send msg to remote service</string>
+    <string name="messenger_service_start">Remote service has started</string>
+    <string name="messemger_serviec_stop">Remote service has stopped</string>
+</resources>
